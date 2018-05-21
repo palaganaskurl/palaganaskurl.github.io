@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300italic,500,700);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.landing {
+  min-height: 100vh;
+  background: url(https://wallpapercave.com/wp/wp1828925.png) no-repeat center center;
+  background-size: cover;
+}
+
+.clear {
+  clear: both;
+}
+
+.code-editor {
+  width: 100%;
+  max-width: 800px;
+  margin: 10em auto;
+  opacity: 0.9;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.code-editor .title-bar {
+  background: #0078d7;
+  height: 30px;
+  line-height: 30px;
+  padding-right: 10px;
+  padding-left: 14px;
+}
+
+.code-editor .title-bar .title {
+  color: white;
+  display: inline-block;
+}
+
+.code-editor .title-bar .title-bar-buttons {
+  float: right;
+}
+
+.code-editor .title-bar .title-bar-buttons .button {
+  display: inline-block;
+}
+
+.code-editor .body-editor .line-numbers {
+  text-align: center;
+  width: 35px;
+  background: #263238;
+  padding: 7px 10px 7px 10px;
+  float: left;
+}
+
+.code-editor .body-editor .line-numbers .line-number {
+  display: block;
+  color: white;
+}
+
+.code-editor .body-editor .editor {
+  background: #1B2225;
+  color: #cdd3de;
+  display: inline-block;
+  padding: 7px 10px;
+  width: calc(100% - 35px);
+}
+
+.code-editor .body-editor .editor span {
+  color: #98A8B5;
+  font-weight: 400;
+  display: block;
+}
+
+.code-editor .body-editor .editor span div.indent-1 {
+  text-indent: 10px;
+}
+
+.code-editor .body-editor .editor span div.indent-2 {
+  text-indent: 20px;
+}
+
+.code-editor .body-editor .editor span div.indent-3 {
+  text-indent: 30px;
+}
+
+.code-editor .body-editor .editor span div.indent-4 {
+  text-indent: 40px;
+}
+
+.code-editor .body-editor .editor span div.indent-5 {
+  text-indent: 50px;
+}
+
+.code-editor .body-editor .editor span div.indent-6 {
+  text-indent: 60px;
+}
+
+.code-editor .body-editor .editor span div.indent-7 {
+  text-indent: 70px;
+}
+
+.code-editor .body-editor .editor span div.indent-8 {
+  text-indent: 80px;
+}
+
+.code-editor .body-editor .editor span div.indent-9 {
+  text-indent: 90px;
+}
+
+.code-editor .body-editor .editor span div.indent-10 {
+  text-indent: 100px;
+}
+
+.works {
+  background-color: #192a56;
+}
+
+.links-contacts h3 {
+  font-weight: 600;
+}
+/*# sourceMappingURL=custom.css.map */

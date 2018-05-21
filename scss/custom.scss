@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300italic,500,700);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.landing {
+  min-height: 100vh;
+  background: url(https://wallpapercave.com/wp/wp1828925.png) no-repeat center center;
+  background-size: cover;
+}
+
+.clear {
+  clear: both;
+}
+
+.code-editor {
+  width: 100%;
+  max-width: 800px;
+  margin: 10em auto;
+  opacity: 0.9;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+
+  .title-bar {
+    background: rgb(0, 120, 215);
+    height: 30px;
+    line-height: 30px;
+    padding-right: 10px;
+    padding-left: 14px;
+
+    .title {
+      color: white;
+      display: inline-block;
+    }
+
+    .title-bar-buttons {
+      float: right;
+
+      .button {
+        display: inline-block;
+      }
+    }
+  }
+
+  .body-editor {
+    .line-numbers {
+      text-align: center;
+      width: 35px;
+      background: #263238;
+      padding: 7px 10px 7px 10px;
+      float: left;
+
+      .line-number {
+        display: block;
+        color: white;
+      }
+    }
+
+    .editor {
+      background: #1B2225;
+      color: #cdd3de;
+      display: inline-block;
+      padding: 7px 10px;
+      width: calc(100% - 35px);
+      
+      span {
+        color: #98A8B5;
+        font-weight: 400;
+        display: block;
+
+        $starting-indent: 10px;
+
+        @for $i from 1 through 10 {
+          div.indent-#{$i} {
+            text-indent: $starting-indent;
+            $starting-indent: $starting-indent + 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.works {
+  background-color: #192a56;
+}
+
+.links-contacts {
+  h3 {
+    font-weight: 600;
+  }
+}
