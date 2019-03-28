@@ -2,11 +2,9 @@
 
 .landing {
   min-height: 100vh;
-  min-width: 100vh;
-  background: url(/resources/images/bg-compressed.png) no-repeat center center;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url(/resources/images/bg-compressed.png) no-repeat center center fixed;
   background-size: cover;
+  height: 100%;
 }
 
 .work_experience {
@@ -253,7 +251,7 @@ pre.line-numbers > code {
   top: 0;
 
   font-size: 100%;
-  left: -7.5em;
+  left: -9.5em;
   width: 3em;
   /* works for line-numbers below 1000 lines */
   letter-spacing: -1px;
