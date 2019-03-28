@@ -1,0 +1,14 @@
+{
+  "liveServer.settings.port": 7777,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      "savePath": "~/../resources/css/"
+    }
+  ],
+  "liveSassCompile.settings.autoprefix": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
