@@ -48,7 +48,6 @@
   width: 750px;
   text-align: left;
   border-radius: 0 0 5px 5px;
-  // overflow: auto;
   -webkit-transition: all .5s ease-in-out;
   -moz-transition: wall .5s ease-in-out;
   -o-transition: all .5s ease-in-out;
@@ -99,19 +98,15 @@
   background-color: #97c38a;
 }
 
-/* -- iPad Screen -- */
-
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .code-editor {
-    width: 503px;
+    width: 400px;
   }
 
   .code-editor:before {
-    width: 503px;
+    width: 400px;
   }
 }
-
-/* -- iPhone Screen -- */
 
 @media only screen and (max-width: 479px) {
   .code-editor {
@@ -139,6 +134,7 @@ pre[class*="language-"] {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
+  overflow: auto;
 }
 
 /* Code blocks */
