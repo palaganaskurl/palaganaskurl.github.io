@@ -9,4 +9,4 @@ Welcome to my website! I'm Kurl Angelo D. Palaganas, a web developer from the Ph
 
 Here you'll find a little bit about who I am, what I've worked on, and my thoughts on web development. Head over to the [about](/about/) page for my full work experience, skills, and how to get in touch.
 
-Thanks for stopping by — I'm always open to new opportunities and interesting projects, so don't hesitate to reach out.
+Thanks for stopping by — don't hesitate to reach out.

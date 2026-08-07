@@ -4,8 +4,21 @@ import PostPreview from "@/components/blog/PostPreview.astro";
 import Note from "@/components/note/Note.astro";
 import SocialList from "@/components/SocialList.astro";
 import { getAllPosts } from "@/data/post";
-import PageLayout from "@/layouts/Base.astro";
 import { collectionDateSort } from "@/utils/date";
+import BaseLayout from "./Base.astro";
+
+interface Props {
+	frontmatter: {
+		title: string;
+		description?: string;
+	};
+}
+
+const {
+	frontmatter: { title, description },
+} = Astro.props;
+
+const meta = description ? { title, description } : { title };
 
 // Posts
 const MAX_POSTS = 10;
@@ -29,15 +42,14 @@ const latestNotes = allNotes
 	.slice(0, MAX_NOTES) as CollectionEntry<"note">[];
 ---
 
-<PageLayout meta={{ title: "Home" }}>
+<BaseLayout meta={meta}>
 	<section>
-		<h1 class="title mb-12">Hello. I’m Kurl.</h1>
-		<p class="mb-4">
-			I’m Kurl Angelo D. Palaganas, a web developer working with PHP (Laravel) and Node.js, plus
-			front-end tooling like Vue.js. I’m currently open to new opportunities. You can find out more
-			about me and my experience on the <a class="cactus-link" href="/about/">about</a> page.
-		</p>
-		<SocialList />
+		<div class="prose prose-sm prose-cactus max-w-none">
+			<slot />
+		</div>
+		<div class="mt-4">
+			<SocialList />
+		</div>
 	</section>
 	{
 		pinnedPosts.length > 0 && (
@@ -81,4 +93,4 @@ const latestNotes = allNotes
 			</section>
 		)
 	}
-</PageLayout>
+</BaseLayout>
