@@ -1,0 +1,79 @@
+---
+import SocialList from "@/components/SocialList.astro";
+import PageLayout from "@/layouts/Base.astro";
+
+const meta = {
+	description: "Web developer from the Philippines. PHP (Laravel), Node.js, and front-end development.",
+	title: "About",
+};
+---
+
+<PageLayout meta={meta}>
+	<h1 class="title mb-12">About</h1>
+	<div class="prose prose-sm prose-cactus max-w-none">
+		<p>
+			Hi, I’m Kurl Angelo D. Palaganas, a web developer based in the Philippines. I build things
+			for the web, working on both front-end and back-end, and I’m currently open to new
+			opportunities.
+		</p>
+
+		<h2>Work Experience</h2>
+		<h3>Web Developer — SimpleX Internet Philippines</h3>
+		<p><em>April 2018 – Present</em></p>
+		<ul role="list">
+			<li>Developed Cafe24 apps using PHP (Laravel).</li>
+			<li>Developed internal company projects using PHP (Laravel) and Node.js.</li>
+			<li>Handled front-end (Vue.js, jQuery, VanillaJS) and back-end (PHP Laravel, Node.js) developments.</li>
+			<li>Wrote unit and acceptance tests.</li>
+			<li>Wrote flowcharts, wikis, and documentation.</li>
+		</ul>
+		<h3>Intern Developer — Innovantage, Inc</h3>
+		<p><em>April 2017 – May 2017</em></p>
+		<ul role="list">
+			<li>Developed Messenger bots using Node.js.</li>
+		</ul>
+
+		<h2>Technical Skills</h2>
+		<h3>Programming</h3>
+		<ul role="list">
+			<li><strong>Not really languages:</strong> HTML, HTML5, CSS, CSS3, JSON</li>
+			<li><strong>Real languages:</strong> PHP, JavaScript, Python, SQL, Java, C, C#</li>
+			<li><strong>Database:</strong> MySQL, NoSQL, Redis</li>
+			<li><strong>Web technologies:</strong> Node.js, Laravel, Django, Flask, Vue.js, React, SASS/SCSS, jQuery</li>
+		</ul>
+
+		<h2>Environments</h2>
+		<h3>Development Tools</h3>
+		<ul role="list">
+			<li><strong>IDEs:</strong> PhpStorm, Eclipse, Microsoft Visual Studio, PyCharm, Dev-C++</li>
+			<li><strong>Text editors:</strong> Visual Studio Code, Sublime Text Editor</li>
+			<li><strong>Tools:</strong> XAMPP Server, WAMP Server, MySQL Workbench, Git, Source Tree, Cmder, VirtualBox, Postman</li>
+			<li><strong>Operating systems:</strong> Windows, CentOS</li>
+		</ul>
+
+		<h2>Personal Skills</h2>
+		<ul role="list">
+			<li>Can manage time effectively</li>
+			<li>Has good decision making</li>
+			<li>Open to new knowledge</li>
+			<li>Can work under pressure</li>
+			<li>Can communicate well</li>
+			<li>Good critical thinking</li>
+			<li>Has teamwork</li>
+			<li>Dependable</li>
+			<li>Fast learner</li>
+			<li>Adaptable</li>
+			<li>Punctual</li>
+			<li>Flexible</li>
+		</ul>
+
+		<h2>Contacts</h2>
+		<ul role="list">
+			<li>Email: <a class="cactus-link" href="mailto:palaganaskurl@gmail.com">palaganaskurl@gmail.com</a>, <a class="cactus-link" href="mailto:kurlpalaganas@yahoo.com">kurlpalaganas@yahoo.com</a></li>
+			<li>Phone: 09174802418 / 09493274965</li>
+		</ul>
+	</div>
+	<div class="mt-8">
+		<SocialList />
+	</div>
+</PageLayout>

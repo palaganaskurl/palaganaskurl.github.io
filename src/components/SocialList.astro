@@ -1,0 +1,63 @@
+---
+import { Icon } from "astro-icon/components";
+
+/** 
+	Uses https://www.astroicon.dev/getting-started/
+	Find icons via guide: https://www.astroicon.dev/guides/customization/#open-source-icon-sets
+	Only installed pack is: @iconify-json/mdi
+*/
+const socialLinks: {
+	friendlyName: string;
+	isWebmention?: boolean;
+	link: string;
+	name: string;
+}[] = [
+	{
+		friendlyName: "Github",
+		link: "https://github.com/palaganaskurl",
+		name: "mdi:github",
+	},
+	{
+		friendlyName: "LinkedIn",
+		link: "https://linkedin.com/in/kurl-angelo-palaganas-173289116/",
+		name: "mdi:linkedin",
+	},
+	{
+		friendlyName: "Facebook",
+		link: "https://facebook.com/imbakurl",
+		name: "mdi:facebook",
+	},
+	{
+		friendlyName: "Twitter",
+		link: "https://twitter.com/palaganaskurl",
+		name: "mdi:twitter",
+	},
+];
+---
+
+<div class="flex flex-wrap items-end gap-x-2">
+	<p>Find me on</p>
+	<ul class="flex flex-1 items-center gap-x-2 sm:flex-initial">
+		{
+			socialLinks.map(({ friendlyName, isWebmention, link, name }) => (
+				<li class="flex">
+					<a
+						class="hover:text-link inline-block"
+						href={link}
+						rel={`noreferrer ${isWebmention ? "me authn" : ""}`}
+						target="_blank"
+					>
+						<Icon aria-hidden="true" class="h-8 w-8" focusable="false" name={name} />
+						<span class="sr-only">{friendlyName}</span>
+					</a>
+				</li>
+			))
+		}
+		<li class="flex">
+			<a class="hover:text-link inline-block" href="mailto:palaganaskurl@gmail.com">
+				<Icon aria-hidden="true" class="h-8 w-8" focusable="false" name="mdi:email-outline" />
+				<span class="sr-only">Email</span>
+			</a>
+		</li>
+	</ul>
+</div>
