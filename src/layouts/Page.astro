@@ -1,0 +1,27 @@
+---
+import SocialList from "@/components/SocialList.astro";
+import BaseLayout from "./Base.astro";
+
+interface Props {
+	frontmatter: {
+		title: string;
+		description?: string;
+	};
+}
+
+const {
+	frontmatter: { title, description },
+} = Astro.props;
+
+const meta = description ? { title, description } : { title };
+---
+
+<BaseLayout meta={meta}>
+	<h1 class="title mb-12">{title}</h1>
+	<div class="prose prose-sm prose-cactus max-w-none">
+		<slot />
+	</div>
+	<div class="mt-8">
+		<SocialList />
+	</div>
+</BaseLayout>
